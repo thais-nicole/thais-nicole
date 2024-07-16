@@ -3,9 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Nome - Site Pessoal</title>
+    <title>Thaís Nicole</title>
+
+    <!-- Arquivos CSS do Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos adicionais (opcional) -->
+    <style>
+        body {
+            padding-top: 4.5rem; /* Para ajustar o conteúdo abaixo da navbar fixa */
+        }
+    </style>
 </head>
 <body>
-    <!-- Conteúdo do seu site vai aqui -->
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Seu Nome</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projetos">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Conteúdo do site -->
+<section id="sobre" class="py-5">
+    <div class="container">
+        <h2>Sobre Mim</h2>
+        <p>Texto sobre você...</p>
+    </div>
+</section>
+
+<section id="projetos" class="py-5 bg-light">
+    <div class="container">
+        <h2>Meus Projetos</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 1</h5>
+                        <p class="card-text">Descrição do projeto...</p>
+                        <a href="#" class="btn btn-primary">Ver Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 2</h5>
+                        <p class="card-text">Descrição do projeto...</p>
+                        <a href="#" class="btn btn-primary">Ver Mais</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Adicione mais colunas conforme necessário para mais projetos -->
+        </div>
+    </div>
+</section>
+
+<section id="contato" class="py-5">
+    <div class="container">
+        <h2>Contato</h2>
+        <p>Email: seuemail@example.com</p>
+        <p>Telefone: (xx) xxxxx-xxxx</p>
+    </div>
+</section>
+
+<!-- Scripts do Bootstrap (opcional, se você precisar de componentes JavaScript) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
