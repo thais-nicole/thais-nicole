@@ -1,92 +1,233 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thaís Nicole</title>
-
-    <!-- Arquivos CSS do Bootstrap -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Estilos adicionais (opcional) -->
-    <style>
-        body {
-            padding-top: 4.5rem; /* Para ajustar o conteúdo abaixo da navbar fixa */
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@thais-nicole</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- CSS personalizado -->
+  <style>
+    body {
+      font-family: Arial, sans-serif; /* Fonte padrão */
+      background-color: #f8f9fa; /* Cor de fundo do corpo */
+      color: #495057; /* Cor do texto */
+      margin-bottom: 60px; /* Margem inferior para o footer */
+    }
+    .navbar {
+      background-color: #343a40; /* Cor de fundo da barra de navegação */
+    }
+    .navbar-brand {
+      font-weight: bold; /* Texto do logo em negrito */
+    }
+    .section {
+      padding: 80px 0; /* Espaçamento interno da seção */
+      background-color: #ffffff; /* Cor de fundo das seções */
+      text-align: center; /* Centraliza o conteúdo */
+    }
+    .card {
+      background-color: #ffffff; /* Fundo dos cartões */
+      border: none; /* Remove a borda */
+      transition: transform 0.3s ease-in-out; /* Transição suave */
+    }
+    .card:hover {
+      transform: translateY(-10px); /* Efeito de levantar o cartão ao passar o mouse */
+    }
+    .card-title {
+      font-size: 1.5rem; /* Tamanho do título do cartão */
+    }
+    .card-text {
+      color: #6c757d; /* Cor do texto do cartão */
+      text-align: left; /* Alinha o texto à esquerda */
+    }
+    .badge {
+      font-size: 0.8rem; /* Tamanho da fonte dos badges */
+      padding: 6px 10px; /* Espaçamento interno dos badges */
+      border: 1px solid #6c757d; /* Borda clara */
+      border-radius: 5px; /* Borda arredondada dos badges */
+      background-color: #ffffff; /* Fundo branco */
+      color: #6c757d; /* Cor do texto */
+      margin-right: 5px; /* Margem direita entre os badges */
+    }
+ 
+   
+  </style>
 </head>
+
 <body>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <!-- Barra de navegação -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="#">Seu Nome</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#sobre">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projetos">Projetos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contato">Contato</a>
-                </li>
-            </ul>
-        </div>
+      <a class="navbar-brand" href="#">@thais-nicole</a>
+      <a href="https://www.linkedin.com/in/thais-nicole" target="_blank" class="mr-2"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/thais-nicole" target="_blank"><i class="fab fa-github"></i></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projetos">Projects</a>
+          </li>
+        </ul>
+      </div>
     </div>
-</nav>
+  </nav>
 
-<!-- Conteúdo do site -->
-<section id="sobre" class="py-5">
+  <!-- Seção Sobre Mim -->
+  <section id="sobre" class="section">
     <div class="container">
-        <h2>Sobre Mim</h2>
-        <p>Texto sobre você...</p>
-    </div>
-</section>
-
-<section id="projetos" class="py-5 bg-light">
-    <div class="container">
-        <h2>Meus Projetos</h2>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Projeto 1</h5>
-                        <p class="card-text">Descrição do projeto...</p>
-                        <a href="#" class="btn btn-primary">Ver Mais</a>
-                    </div>
-                </div>
+      <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">👋 Hi, I’m @thais-nicole</h5>
+                    
+                    <p class="card-text">👀 I’m passionate about <b>data science</b>, strategic roles, and solving complex problems innovatively.</p>
+                    <p class="card-text">💞️ I’m eager to collaborate on projects that require strategic data analysis and process optimization.</p>
+                    <p class="card-text">😄 Pronouns: she/her</p>
+                    <p class="card-text">⚡ Fun fact: I find great joy in volunteering as a math and statistics teacher!</p>
+                  </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Projeto 2</h5>
-                        <p class="card-text">Descrição do projeto...</p>
-                        <a href="#" class="btn btn-primary">Ver Mais</a>
-                    </div>
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Programming languages</h5>
+                <div>
+                  <span class="badge badge-primary"><i class="fab fa-python"></i> Python</span>
+                  <span class="badge badge-secondary"><i class="fas fa-database"></i> SQL</span>
                 </div>
+              </div>
             </div>
-            <!-- Adicione mais colunas conforme necessário para mais projetos -->
+          </div>
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">🌱 Academic education</h5>
+              
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"> <p class="card-text"><b>Oct 2023 - May 2025</b> Master of Business Administration (MBA) Software Engineering in USP Universidade de São Paulo</p></li>
+                <li class="list-group-item"> <p class="card-text"><b>Apr 2024 - May 2025</b> Postgraduate Certificate in Software (Residency), Software Engineering in Universidade Federal de Pernambuco</p></li>
+                <li class="list-group-item"><p class="card-text"><b>Mar 2016 - Dec 2022</b> Bachelor's degree, Mechanical Engineering in Universidade Federal de Pernambuco</p></li>
+              </ul>
+
+            </div>
+          </div>
+
+
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="contato" class="py-5">
+
+  <!-- Seção Projetos -->
+  <section id="projetos" class="section bg-light">
     <div class="container">
-        <h2>Contato</h2>
-        <p>Email: seuemail@example.com</p>
-        <p>Telefone: (xx) xxxxx-xxxx</p>
-    </div>
-</section>
+      <h2 class="mb-5">Projects</h2>
+      <div class="row">
 
-<!-- Scripts do Bootstrap (opcional, se você precisar de componentes JavaScript) -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Project name</h5>
+              <p class="card-text">Details</p>
+              <div>
+                <span class="badge badge-primary"><i class="fab fa-python"></i> Python</span>
+                <span class="badge badge-secondary"><i class="fas fa-database"></i> SQL</span>
+              </div>
+              <a href=" " class="btn btn-primary mt-3">Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Project name</h5>
+                <p class="card-text">Details</p>
+                <div>
+                  <span class="badge badge-primary"><i class="fab fa-python"></i> Python</span>
+                  <span class="badge badge-secondary"><i class="fas fa-database"></i> SQL</span>
+                </div>
+                <a href=" " class="btn btn-primary mt-3">Details</a>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Project name</h5>
+                <p class="card-text">Details</p>
+                <div>
+                  <span class="badge badge-primary"><i class="fab fa-python"></i> Python</span>
+                  <span class="badge badge-secondary"><i class="fas fa-database"></i> SQL</span>
+                </div>
+                <a href=" " class="btn btn-primary mt-3">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Project name</h5>
+                <p class="card-text">Details</p>
+                <div>
+                  <span class="badge badge-primary"><i class="fab fa-python"></i> Python</span>
+                  <span class="badge badge-secondary"><i class="fas fa-database"></i> SQL</span>
+                </div>
+                <a href=" " class="btn btn-primary mt-3">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Project name</h5>
+                <p class="card-text">Details</p>
+                <div>
+                  <span class="badge badge-primary"><i class="fab fa-python"></i> Python</span>
+                  <span class="badge badge-secondary"><i class="fas fa-database"></i> SQL</span>
+                </div>
+                <a href=" " class="btn btn-primary mt-3">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Project name</h5>
+                <p class="card-text">Details</p>
+                <div>
+                  <span class="badge badge-primary"><i class="fab fa-python"></i> Python</span>
+                  <span class="badge badge-secondary"><i class="fas fa-database"></i> SQL</span>
+                </div>
+                <a href=" " class="btn btn-primary mt-3">Details</a>
+              </div>
+            </div>
+          </div>
+        
+        <!-- Fim dos projetos -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Bootstrap JavaScript (opcional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
