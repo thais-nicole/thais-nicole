@@ -84,8 +84,12 @@
         margin-bottom: 20px;
         font-size: 0.9rem;
       }
-      .card-text{
-        margin: 2px;
+      .card-text1{
+        margin: 0px;
+      }
+
+      .card-text2{
+        margin: 0px;
       }
 
       .search-input input {
@@ -251,8 +255,8 @@
                 <img src="images/example.png" class="card-img-top" alt="Image">
                 <div class="card-body">
                   <h5 class="card-title">Monthly Expense Data Analysis</h5>
-                  <p class="card-text"><b>Objective:</b> To identify spending patterns, categorize expenses, and forecast future expenditures to assist in financial planning.</p>
-                  <p class="card-text"><b>Tags:</b> Numpy, Python, Pandas, Matplotib e Scikit-Learn</p>
+                  <p class="card-text1"><b>Objective:</b> To identify spending patterns, categorize expenses, and forecast future expenditures to assist in financial planning.</p>
+                  <p class="card-text2"><b>Tags:</b> Numpy, Python, Pandas, Matplotib e Scikit-Learn</p>
                   <a href="#artigo" class="btn btn-secondary button-custom">
                      Article
                   </a>
@@ -310,7 +314,9 @@
         var cards = document.querySelectorAll('.card-item');
         cards.forEach(function(card) {
           var title = card.querySelector('.card-title').textContent.toLowerCase();
-          var text = card.querySelector('.card-text').textContent.toLowerCase();
+          var text = card.querySelector('.card-text1').textContent.toLowerCase();
+          var text = card.querySelector('.card-text2').textContent.toLowerCase();
+
           if (title.includes(filter) || text.includes(filter)) {
             card.style.display = '';
           } else {
