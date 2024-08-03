@@ -84,6 +84,10 @@
         margin-bottom: 20px;
         font-size: 0.9rem;
       }
+      .card-text{
+        margin: 2px;
+      }
+
       .search-input input {
         width: 100%;
         font-size: 0.8rem; /* Reduz o tamanho da fonte do input */
@@ -102,6 +106,56 @@
           font-size: 0.75rem;
           text-align: center;
       }
+      
+      .navbar-custom {
+        background-color: #f0f2f4; /* Lilás claro */
+        padding: 2px;
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+        border-bottom:1px solid #dad9dc;
+      }
+
+      .button-custom {
+        background-color: #705697; /* Lilás claro */
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
+        border: #705697;
+        margin-top: 20px;
+      }
+
+      .button-custom:hover {
+        background-color: #9d93ad; /* Lilás claro */
+      }
+
+      .navbar-custom .navbar-brand,
+      .navbar-custom .nav-link {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte dos itens da navbar */
+        color: #3b3b3b;
+      }
+
+      .aboutme{
+        background-color: #e8e8e8;
+        width: 100%;
+        border: 1px solid #f2f2f2;
+        border-radius: 5px;
+        padding: 2%;
+        color: #666;
+        font-size: 0.9rem;
+        
+      }
+      .aboutme h2{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: #353535;
+      }
+
+      .aboutme h3{
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        color: #353535;
+      }
+
       @media (max-width: 1200px) {
         .sidebar {
           display: none;
@@ -115,68 +169,13 @@
           margin-bottom: 2%;
       } }
 
-      /* Cor lilás para a navbar */
-      .navbar-custom {
-        background-color: #f0f2f4; /* Lilás claro */
-        padding: 2px;
-        font-size: 0.9rem; /* Reduz o tamanho da fonte */
-        position: fixed;
-        z-index: 1000;
-        width: 100%;
-        border-bottom:1px solid #dad9dc;
-      }
-
-      /* Cor lilás para a navbar */
-      .button-custom {
-        background-color: #705697; /* Lilás claro */
-        font-size: 0.9rem; /* Reduz o tamanho da fonte */
-        border: #705697;
-      }
-
-      .button-custom:hover {
-        background-color: #9d93ad; /* Lilás claro */
-      }
-
-      .navbar-custom .navbar-brand,
-      .navbar-custom .nav-link {
-        font-size: 0.9rem; /* Reduz o tamanho da fonte dos itens da navbar */
-        color: #3b3b3b;
-      }
-
-
-      .aboutme{
-        background-color: #e8e8e8;
-        width: 100%;
-        border: 1px solid #f2f2f2;
-        border-radius: 5px;
-        padding: 2%;
-        color: #666;
-        font-size: 0.9rem;
-        
-      }
-
-      .aboutme h2{
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-        color: #353535;
-      }
-
-      .aboutme h3{
-        font-size: 1.1rem;
-        margin-bottom: 10px;
-        color: #353535;
-
-      }
-
-
-
     </style>
   </head>
   <body>
     
     <nav class="navbar navbar-expand-lg navbar-custom">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Data Science Projects<b></b></a>
+        <a class="navbar-brand" href="#"><b>Data Science Projects</b></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -249,85 +248,11 @@
           <div class="row" id="cardContainer">
             <div class="col-md-4 card-item">
               <div class="card">
-                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Image">
+                <img src="images/example.png" class="card-img-top" alt="Image">
                 <div class="card-body">
-                  <h5 class="card-title">Card Title 1</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#artigo" class="btn btn-secondary button-custom">
-                     Article
-                  </a>
-                  <a href="#repositorio" class="btn btn-secondary button-custom">
-                     Repository
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 card-item">
-              <div class="card">
-                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Image">
-                <div class="card-body">
-                  <h5 class="card-title">Card Title 1</h5>
-                  <p class="card-text">Some quick example fast to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#artigo" class="btn btn-secondary button-custom">
-                     Article
-                  </a>
-                  <a href="#repositorio" class="btn btn-secondary button-custom">
-                     Repository
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 card-item">
-              <div class="card">
-                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Image">
-                <div class="card-body">
-                  <h5 class="card-title">Card Title 1</h5>
-                  <p class="card-text">Some quick example text to fast on the card title and make up the bulk of the card's content.</p>
-                  <a href="#artigo" class="btn btn-secondary button-custom">
-                     Article
-                  </a>
-                  <a href="#repositorio" class="btn btn-secondary button-custom">
-                   Repository
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 card-item">
-              <div class="card">
-                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Image">
-                <div class="card-body">
-                  <h5 class="card-title">Card Title 1</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#artigo" class="btn btn-secondary button-custom">
-                     Article
-                  </a>
-                  <a href="#repositorio" class="btn btn-secondary button-custom">
-                    Repository
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 card-item">
-              <div class="card">
-                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Image">
-                <div class="card-body">
-                  <h5 class="card-title">Card Title 1</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#artigo" class="btn btn-secondary button-custom">
-                     Article
-                  </a>
-                  <a href="#repositorio" class="btn btn-secondary button-custom">
-                    Repository
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 card-item">
-              <div class="card">
-                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Image">
-                <div class="card-body">
-                  <h5 class="card-title">Card Title 1</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 class="card-title">Monthly Expense Data Analysis</h5>
+                  <p class="card-text"><b>Objective:</b> To identify spending patterns, categorize expenses, and forecast future expenditures to assist in financial planning.</p>
+                  <p class="card-text"><b>Tags:</b> Numpy, Python, Pandas, Matplotib e Scikit-Learn</p>
                   <a href="#artigo" class="btn btn-secondary button-custom">
                      Article
                   </a>
@@ -338,13 +263,14 @@
               </div>
             </div>
             
+            
 
             <!-- Adicione mais cards conforme necessário -->
           </div>
 
           <div class="aboutme" id="aboutme">
-            <h2 >Welcome to My Data Science Portfolio</h2>
-            <p>Hello! I'm Thaís Nicole, a passionate data scientist with a strong foundation in Python and SQL, driven by a deep curiosity for uncovering insights from data. With a background in engineering and project management, I bring a unique perspective to data science, combining analytical skills with a strategic mindset.</p>
+            <h2 >Welcome to My Portfolio</h2>
+            <p>I'm Thaís Nicole, a passionate data scientist with a strong foundation in Python, Machine Learning and SQL, driven by a deep curiosity for uncovering insights from data. </p>
             <h3>About</h3>
             <p>I hold a Postgraduate Certificate in Software Engineering from UFPE, an MBA in Software Engineering from USP, and a Bachelor's degree in Mechanical Engineering from UFPE. My professional journey includes over three years of experience in project management, where I honed my skills in developing new products, optimizing processes, and leading teams. Currently, I am focused on expanding my expertise in data science, leveraging my knowledge in Python, SQL, and various data manipulation and machine learning libraries.</p>
             <h3>Skills & Expertise</h3>
@@ -365,16 +291,8 @@
                 Programming:Advanced knowledge in Python, with practical experience in web frameworks like Flask.
             </li>
         </ul>
-        <h3>Connect with Me</h3>
-            <ul>
-              <li>
-                Linkedin: <a href="https://www.linkedin.com/in/thais-nicole/">https://www.linkedin.com/in/thais-nicole/</a>
-              </li>
-              <li>
-                GitHub: <a href="https://github.com/thais-nicole/">https://github.com/thais-nicole/</a>
-              </li>
-          </ul>
-            <p>Thank you for visiting my portfolio!</p>
+        <p>Thank you for visiting my portfolio!</p>
+
           </div>
         </div>
 
