@@ -1,238 +1,319 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thais Nicole</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+      html, body {
+        display: flex;
+        flex-direction: column;
+        background-color: #F3F6F8 ;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>@thais-nicole</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Font Awesome para ícones -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <!-- CSS personalizado -->
-  <style>
-    body {
-      font-family: Arial, sans-serif; /* Fonte padrão */
-      background-color: #f8f9fa; /* Cor de fundo do corpo */
-      color: #495057; /* Cor do texto */
-      margin-bottom: 60px; /* Margem inferior para o footer */
-    }
-    .navbar {
-      background-color: #343a40; /* Cor de fundo da barra de navegação */
-    }
-    .navbar-brand {
-      font-weight: bold; /* Texto do logo em negrito */
-    }
-    .section {
-      padding: 80px 0; /* Espaçamento interno da seção */
-      background-color: #ffffff; /* Cor de fundo das seções */
-      text-align: center; /* Centraliza o conteúdo */
-    }
-    .card {
-      background-color: #ffffff; /* Fundo dos cartões */
-      border: none; /* Remove a borda */
-      transition: transform 0.3s ease-in-out; /* Transição suave */
-    }
-    .card:hover {
-      transform: translateY(-10px); /* Efeito de levantar o cartão ao passar o mouse */
-    }
-    .card-title {
-      font-size: 1.5rem; /* Tamanho do título do cartão */
-    }
-    .card-text {
-      color: #6c757d; /* Cor do texto do cartão */
-      text-align: left; /* Alinha o texto à esquerda */
-    }
-    .badge {
-      font-size: 0.8rem; /* Tamanho da fonte dos badges */
-      padding: 6px 10px; /* Espaçamento interno dos badges */
-      border: 1px solid #6c757d; /* Borda clara */
-      border-radius: 5px; /* Borda arredondada dos badges */
-      background-color: #ffffff; /* Fundo branco */
-      color: #6c757d; /* Cor do texto */
-      margin-right: 5px; /* Margem direita entre os badges */
-    }
- 
-   
-  </style>
-</head>
+      .container-fluid {
+        flex: 1;
+      }
 
-<body>
-  <!-- Barra de navegação -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">@thais-nicole</a>
-      
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#sobre">About me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projetos">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/thais-nicole">Linkedin</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/thais-nicole/">Github</a>
-          </li>
-        </ul>
+      .sidebar {
+        position: fixed;
+        left: 0;
+        width: 280px;
+        background-color: #e8e8e8;
+        border: 1px solid #f2f2f2;
+        border-radius: 5px;
+        margin: 60px 90px;
+      }
+      .sidebar .about {
+        padding: 0 15px ;
+        text-align: left;
+        margin-top: -50px;
+      }
+      .sidebar .about h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+      .sidebar .about p {
+        font-size: 0.9rem;
+        color: #666;
+      }
+      .sidebar .cover-photo {
+        width: 100%;
+      }
+      .sidebar .cover-photo img {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+      }
+      .sidebar .profile-photo {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -60px; /* Ajuste para sobrepor a imagem de capa */
+      }
+
+      .sidebar .profile-photo img {
+        border-radius: 50%;
+        width: 125px;
+        height: 125px;
+        border: 3px solid #fff;
+      }
+
+      .main {
+        margin-left: 350px; /* Ajusta a margem para a sidebar */
+        padding: 60px;
+      }
+      .footer {
+        color: #ffffff;
+        background-color: #705697;
+        text-align: right;
+        font-size: 0.9rem;
+        padding: 0px 20px; /* Ajustado o padding para dar uma aparência mais consistente */
+        position: fixed; /* Fixar o footer na parte inferior da página */
+        bottom: 0;
+        width: 100%;
+        left: 0; /* Certifique-se de que o footer está alinhado com a borda esquerda da página */
+      }
+      .card {
+        margin-bottom: 20px;
+      }
+      .search-input input {
+        width: 100%;
+        font-size: 0.8rem; /* Reduz o tamanho da fonte do input */
+      }
+      .tags {
+        padding: 15px 15px ;
+
+      }
+  
+      .tags .tag {
+          display: inline-block;
+          background-color: #c6c6c69c;
+          color: #000000a6;
+          border-radius: 15px;
+          padding: 1px 10px;
+          font-size: 0.75rem;
+          text-align: center;
+      }
+      @media (max-width: 1200px) {
+        .sidebar {
+          display: none;
+        }
+        .main {
+          margin-left: 0;
+          width: 100%;
+          padding: 60px 0;
+        }
+        .search-input input {
+          margin-bottom: 2%;
+      } }
+
+      /* Cor lilás para a navbar */
+      .navbar-custom {
+        background-color: #f0f2f4; /* Lilás claro */
+        padding: 2px;
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+        border-bottom:1px solid #dad9dc;
+      }
+
+      /* Cor lilás para a navbar */
+      .button-custom {
+        background-color: #705697; /* Lilás claro */
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
+        border: #705697;
+      }
+
+      .button-custom:hover {
+        background-color: #9d93ad; /* Lilás claro */
+      }
+
+      .navbar-custom .navbar-brand,
+      .navbar-custom .nav-link {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte dos itens da navbar */
+      }
+    </style>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><b>Data Science</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/thais-nicole/">Linkedin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/thais-nicole/">Github</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-auto search-input" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+          </form>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Seção Sobre Mim -->
-  <section id="sobre" class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-            <div class="card mb-4">
+    <div class="container-fluid">
+      <div class="row g-0">
+        <div class="col-md-3 sidebar">
+          <div class="cover-photo">
+            <img src="foto mar.jpg" alt="Foto de Capa">
+          </div>
+          <div class="profile-photo">
+            <img src="https://media.licdn.com/dms/image/D4D03AQFEvCT95tYDfw/profile-displayphoto-shrink_800_800/0/1721157329667?e=1727913600&v=beta&t=ATQ28L9GUHAI7Hb2TLKPcV4KiIrxlMP-ATZkHvNieGg" alt="Foto de Perfil">
+          </div>
+
+          <div class="about">
+            <h2>Thaís Nicole Rodrigues</h2>
+            <p>Engenheira com experiência em gestão de projetos, análise de dados e liderança de equipes. Possuo habilidades em otimização de processos e programação, busco atuar em áreas estratégicas focadas em gerenciamento de dados, contribuindo para a tomada de decisões e eficiência organizacional.</p>
+             </div>
+             <div class="tags">
+              <h4 style="font-size: medium; color: #3b3b3b;">Palavras chaves</h4>
+
+              <div class="tag"> Python</div>
+              <div class="tag">SQL</div>
+              <div class="tag"> Machine learnig</div>
+              <div class="tag"> Cloud</div>
+              <div class="tag"> NLP</div>
+              <div class="tag"> Java</div>
+              <div class="tag"> C#</div>
+
+            </div>
+        </div>
+
+        <div class="col-md-9 main">
+          <div class="row" id="cardContainer">
+            <div class="col-md-4 card-item">
+              <div class="card">
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Image">
                 <div class="card-body">
-                    <h5 class="card-title">👋 Hi, I’m @thais-nicole</h5>
-                    
-                    <p class="card-text">👀 I’m passionate about <b>data science</b>, strategic roles, and solving complex problems innovatively.</p>
-                    <p class="card-text">💞️ I’m eager to collaborate on projects that require strategic data analysis and process optimization.</p>
-                    <p class="card-text">😄 Pronouns: she/her</p>
-                    <p class="card-text">⚡ Fun fact: I find great joy in volunteering as a math and statistics teacher!</p>
-                  </div>
-            </div>
-            <div class="card mb-4">
-              <div class="card-body">
-                <h5 class="card-title">Programming languages</h5>
-                <div>
-                  <span class="badge badge-primary"><i class="fab fa-python"></i> Python</span>
-                  <span class="badge badge-secondary"><i class="fas fa-database"></i> SQL</span>
+                  <h5 class="card-title">Card Title 1</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#artigo" class="btn btn-secondary button-custom">
+                     Artigo
+                  </a>
+                  <a href="#repositorio" class="btn btn-secondary button-custom">
+                     Repositório
+                  </a>
                 </div>
               </div>
             </div>
-          </div>
-        <div class="col-md-6">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h5 class="card-title">🌱 Academic education</h5>
-              
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item"> <p class="card-text"><b>Oct 2023 - May 2025</b> Master of Business Administration (MBA) Software Engineering in USP Universidade de São Paulo</p></li>
-                <li class="list-group-item"> <p class="card-text"><b>Apr 2024 - May 2025</b> Postgraduate Certificate in Software (Residency), Software Engineering in Universidade Federal de Pernambuco</p></li>
-                <li class="list-group-item"><p class="card-text"><b>Mar 2016 - Dec 2022</b> Bachelor's degree, Mechanical Engineering in Universidade Federal de Pernambuco</p></li>
-              </ul>
-
+            <div class="col-md-4 card-item">
+              <div class="card">
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Image">
+                <div class="card-body">
+                  <h5 class="card-title">Card Title 1</h5>
+                  <p class="card-text">Some quick example fast to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#artigo" class="btn btn-secondary button-custom">
+                     Artigo
+                  </a>
+                  <a href="#repositorio" class="btn btn-secondary button-custom">
+                     Repositório
+                  </a>
+                </div>
+              </div>
             </div>
+            <div class="col-md-4 card-item">
+              <div class="card">
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Image">
+                <div class="card-body">
+                  <h5 class="card-title">Card Title 1</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#artigo" class="btn btn-secondary button-custom">
+                     Artigo
+                  </a>
+                  <a href="#repositorio" class="btn btn-secondary button-custom">
+                   Repositório
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 card-item">
+              <div class="card">
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Image">
+                <div class="card-body">
+                  <h5 class="card-title">Card Title 1</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#artigo" class="btn btn-secondary button-custom">
+                     Artigo
+                  </a>
+                  <a href="#repositorio" class="btn btn-secondary button-custom">
+                    Repositório
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 card-item">
+              <div class="card">
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Image">
+                <div class="card-body">
+                  <h5 class="card-title">Card Title 1</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#artigo" class="btn btn-secondary button-custom">
+                     Artigo
+                  </a>
+                  <a href="#repositorio" class="btn btn-secondary button-custom">
+                    Repositório
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 card-item">
+              <div class="card">
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Image">
+                <div class="card-body">
+                  <h5 class="card-title">Card Title 1</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#artigo" class="btn btn-secondary button-custom">
+                     Artigo
+                  </a>
+                  <a href="#repositorio" class="btn btn-secondary button-custom">
+                     Repositório
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+
+            <!-- Adicione mais cards conforme necessário -->
           </div>
-
-
         </div>
       </div>
     </div>
-  </section>
 
+    <footer class="footer">
+      <a class="nav-link" href="">&copy; 2024 Thaís Nicole Rodrigues.</a>
+    </footer>
 
-  <!-- Seção Projetos -->
-  <section id="projetos" class="section bg-light">
-    <div class="container">
-      <h2 class="mb-5">Projects</h2>
-      <div class="row">
-
-
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h5 class="card-title">Project name</h5>
-              <p class="card-text">Details</p>
-              <div>
-                <span class="badge badge-primary"><i class="fab fa-python"></i> Python</span>
-                <span class="badge badge-secondary"><i class="fas fa-database"></i> SQL</span>
-              </div>
-              <a href=" " class="btn btn-primary mt-3">Details</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h5 class="card-title">Project name</h5>
-                <p class="card-text">Details</p>
-                <div>
-                  <span class="badge badge-primary"><i class="fab fa-python"></i> Python</span>
-                  <span class="badge badge-secondary"><i class="fas fa-database"></i> SQL</span>
-                </div>
-                <a href=" " class="btn btn-primary mt-3">Details</a>
-              </div>
-            </div>
-          </div>
-        
-          <div class="col-md-4">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h5 class="card-title">Project name</h5>
-                <p class="card-text">Details</p>
-                <div>
-                  <span class="badge badge-primary"><i class="fab fa-python"></i> Python</span>
-                  <span class="badge badge-secondary"><i class="fas fa-database"></i> SQL</span>
-                </div>
-                <a href=" " class="btn btn-primary mt-3">Details</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h5 class="card-title">Project name</h5>
-                <p class="card-text">Details</p>
-                <div>
-                  <span class="badge badge-primary"><i class="fab fa-python"></i> Python</span>
-                  <span class="badge badge-secondary"><i class="fas fa-database"></i> SQL</span>
-                </div>
-                <a href=" " class="btn btn-primary mt-3">Details</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h5 class="card-title">Project name</h5>
-                <p class="card-text">Details</p>
-                <div>
-                  <span class="badge badge-primary"><i class="fab fa-python"></i> Python</span>
-                  <span class="badge badge-secondary"><i class="fas fa-database"></i> SQL</span>
-                </div>
-                <a href=" " class="btn btn-primary mt-3">Details</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h5 class="card-title">Project name</h5>
-                <p class="card-text">Details</p>
-                <div>
-                  <span class="badge badge-primary"><i class="fab fa-python"></i> Python</span>
-                  <span class="badge badge-secondary"><i class="fas fa-database"></i> SQL</span>
-                </div>
-                <a href=" " class="btn btn-primary mt-3">Details</a>
-              </div>
-            </div>
-          </div>
-        
-        <!-- Fim dos projetos -->
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Bootstrap JavaScript (opcional) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      document.getElementById('searchInput').addEventListener('input', function() {
+        var filter = this.value.toLowerCase();
+        var cards = document.querySelectorAll('.card-item');
+        cards.forEach(function(card) {
+          var title = card.querySelector('.card-title').textContent.toLowerCase();
+          var text = card.querySelector('.card-text').textContent.toLowerCase();
+          if (title.includes(filter) || text.includes(filter)) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
