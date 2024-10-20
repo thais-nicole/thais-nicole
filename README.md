@@ -1,20 +1,14 @@
-# 👋 Hi, I’m @thais-nicole
+# 👋 Olá, sou @thais-nicole
 
-- 👀 I’m passionate about data science, strategic roles, and solving complex problems innovatively.
-- 🌱 Currently, I'm delving into advanced data science techniques and their practical applications.
-- 💞️ I’m eager to collaborate on projects that require strategic data analysis and process optimization.
-- 😄 Pronouns: she/her
-- ⚡ Fun fact: I find great joy in volunteering as a math and statistics teacher!
+- 👀 Sou apaixonada por ciência de dados, funções estratégicas e pela resolução inovadora de problemas complexos.
+- 🌱 Atualmente, estou me aprofundando em técnicas avançadas de ciência de dados e suas aplicações práticas.
+- 💞️ Estou ansiosa para colaborar em projetos que exigem análise de dados estratégica e otimização de processos.
+- 😄 Pronomes: ela/dela
 
 ---
 
-I am a graduate in engineering, originally from Pernambuco, Brazil, and I am now seeking specialization in data science for strategic roles.
+Sou graduada em engenharia, Pernambucana, Brasileira, e agora estou buscando especialização em ciência de dados para papéis estratégicos.
 
-My programming skills are well-honed, having been developed during my postgraduate studies in software engineering, with a strong proficiency in Python.
+Minhas habilidades em programação são bem desenvolvidas, tendo sido aprimoradas durante meus estudos de pós-graduação em engenharia de software, com forte proficiência em Python.
 
-https://github.com/thais-nicole/
-
-<!---
-thais-nicole/thais-nicole is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+[[Meu GitHub](https://github.com/thais-nicole/)](https://thais-nicole.github.io/thais-nicole/)
