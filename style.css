@@ -1,0 +1,93 @@
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: #f8f9fa;
+}
+.portfolio-img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+.portfolio-img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+h1, h4 {
+    color: #343a40;
+}
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f4f7d3;
+    color: rgba(21, 21, 21, 0.708);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.sidebar {
+    padding: 20px;
+}
+.sidebar img {
+    border-radius: 50%;
+    width: 80%;
+}
+.card-title {
+    margin-top: 15px;
+    font-weight: bold;
+}
+.card-text {
+    font-size: 14px;
+    color: #555;
+}
+.card2 {
+    border: 1px solid #fafafa;
+    background-color: #f1f4f7d3;
+    border-radius: 10px;
+    text-align: center;
+    margin: 15px 5px;
+    flex: 1 1 calc(25% - 10px); /* Ajusta o tamanho das cartas em telas pequenas */
+}
+.card-icon {
+    font-size: 40px;
+    color: #28a745; /* Cor do ícone */
+}
+.skill-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as cartas quebrem para a próxima linha em telas pequenas */
+    justify-content: center;
+}
+.item {
+    display: none; /* Oculta todos os itens inicialmente */
+}
+
+.page-item.active .page-link {
+background-color: #28a745; /* Cor de fundo para a página ativa */
+border-color: #28a745; /* Cor da borda para a página ativa */
+}
+
+.page-link {
+color: rgb(0, 0, 0); /* Cor do texto dos links */
+}
+
+.page-link:hover {
+background-color: #218838; /* Cor ao passar o mouse */
+color: rgb(255, 255, 255); /* Cor do texto ao passar o mouse */
+}
+
+.pagination {
+margin: 20px 0; /* Margem para separar a paginação do conteúdo */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left:  10%; 
+        padding-right:  10%; 
+    }
+    .card2 {
+        flex: 1 1 calc(100% - 10px); /* Cartas ocupam toda a largura em telas pequenas */
+    }
+}
