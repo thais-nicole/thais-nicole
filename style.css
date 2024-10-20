@@ -90,4 +90,7 @@ margin: 20px 0; /* Margem para separar a paginação do conteúdo */
     .card2 {
         flex: 1 1 calc(100% - 10px); /* Cartas ocupam toda a largura em telas pequenas */
     }
+    .filter{
+        display: none;
+    }
 }
