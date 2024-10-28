@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
+
+
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f6fbff43;">
         <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,10 +34,14 @@
             <!-- Sidebar -->
             <div class="col-md-4">
                 <div class="sidebar">
+                    
                     <img src="images/Thais.jpg" alt="My Avatar" class="portfolio-img">
+
                     <h4 style="margin-top: 10%;">Thaís Nicole Rodrigues</h4>
-                    <p style="margin-bottom: 0px;">Pernambuco, Brasil</p>
+                    <p style="margin-bottom: 0px;">Recife, PE, Brasil</p>
                     <p>Engenheira com experiência em gerenciamento de projetos e gestão de dados.</p>
+                    <p><b>Email:  </b><a href="mailto:rodriguesthaisnicole@gmail.com"> rodriguesthaisnicole@gmail.com</a></p>
+
                 </div>
             </div>
             <div class="col-md-8">
@@ -43,66 +50,60 @@
                     <div class="mt-4 mb-3 filter">
                         <span class="mr-2">Filter:</span>
                         <button class="btn btn-success" onclick="filterItems('all')">Todos</button>
+                        <button class="btn btn-light" onclick="filterItems('db')">DB</button>
                         <button class="btn btn-light" onclick="filterItems('machine-learning')">Machine Learning</button>
                         <button class="btn btn-light" onclick="filterItems('python')">Python</button>
                     </div>
                 </header>
 
                 <div class="row mb-4" id="item-container">
-                  <div class="col-md-6 mb-4 item machine-learning">
-                      <div class="card">
-                          <div class="card-body">
-                              <p><b>Em construção</b></p>
-                              <p>Em construção</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-6 mb-4 item python">
-                    <div class="card">
-                        <div class="card-body">
-                            <p><b>Em construção</b></p>
-                            <p>Em construção</p>
+                    <div class="col-md-6 mb-4 item machine-learning">
+                        <a href="https://github.com/thais-nicole/" target="_blank" style="text-decoration: none; color: inherit;">
+                            <div class="card">
+                                <img src="images/exemplo.png" alt="Descrição da Imagem" class="card-img-top">
+                                <div class="card-body">
+                                    <p><b>Banco de dados MySQL</b></p>
+                                    <p style="margin-top: -10px; margin-bottom: -2px;">Em construção Em construção Em construção Em construção Em construção Em construção</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 mb-4 item machine-learning">
+                        <div class="card">
+                            <img src="images/exemplo.png" alt="Descrição da Imagem" class="card-img-top">
+                            <div class="card-body">
+                                <p><b>Em construção</b></p>
+                                <p style="margin-top: -10px; margin-bottom: -2px;">Em construção Em construção Em construção Em construção Em construção Em construção</p>
+                            </div>
                         </div>
                     </div>
-                </div><div class="col-md-6 mb-4 item python">
-                  <div class="card">
-                      <div class="card-body">
-                          <p><b>Em construção</b></p>
-                          <p>Em construção</p>
-                      </div>
-                  </div>
-              </div><div class="col-md-6 mb-4 item python">
-                <div class="card">
-                    <div class="card-body">
-                        <p><b>Em construção</b></p>
-                        <p>Em construção</p>
+                    <div class="col-md-6 mb-4 item machine-learning">
+                        <div class="card">
+                            <img src="images/exemplo.png" alt="Descrição da Imagem" class="card-img-top">
+                            <div class="card-body">
+                                <p><b>Em construção</b></p>
+                                <p style="margin-top: -10px; margin-bottom: -2px;">Em construção Em construção Em construção Em construção Em construção Em construção</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4 item python">
-              <div class="card">
-                  <div class="card-body">
-                      <p><b>Em construção</b></p>
-                      <p>Em construção</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-6 mb-4 item python">
-            <div class="card">
-                <div class="card-body">
-                    <p><b>Em construção</b></p>
-                    <p>Em construção</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 mb-4 item python">
-          <div class="card">
-              <div class="card-body">
-                  <p><b>Em construção</b></p>
-                  <p>Em construção</p>
-              </div>
-          </div>
-      </div>
+                    <div class="col-md-6 mb-4 item machine-learning">
+                        <div class="card">
+                            <img src="images/exemplo.png" alt="Descrição da Imagem" class="card-img-top">
+                            <div class="card-body">
+                                <p><b>Em construção</b></p>
+                                <p style="margin-top: -10px; margin-bottom: -2px;">Em construção Em construção Em construção Em construção Em construção Em construção</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4 item machine-learning">
+                        <div class="card">
+                            <img src="images/exemplo.png" alt="Descrição da Imagem" class="card-img-top">
+                            <div class="card-body">
+                                <p><b>Em construção</b></p>
+                                <p style="margin-top: -10px; margin-bottom: -2px;">Em construção Em construção Em construção Em construção Em construção Em construção</p>
+                            </div>
+                        </div>
+                    </div>
           </div>
       
           <nav id="pagination" aria-label="Page navigation">
@@ -112,19 +113,18 @@
 
             </div>
         </div>
+       
+
         <hr>
         <!-- About Me Section -->
         <div class="mb-4" id="about">
             <h4><b>Sobre Mim</b></h4>
             <p>
-              Olá, sou Thaís Nicole! Sempre fui curiosa e apaixonada por tecnologia. Desde pequena, adorava brinquedos inovadores, como helicópteros de controle remoto, microscópios e laptops, que eram bem diferentes dos brinquedos tradicionais dos anos 2000.
+                Olá! Sou Thaís Nicole, engenheira e apaixonada por ciência de dados. Adoro explorar insights e revelar histórias ocultas nos dados, enxergando o mundo de forma sistêmica, onde cada detalhe importa.  
             </p>
-            <p> 
-            Ao longo do tempo, segui meu sonho e me tornei engenheira, onde descobri minha paixão pela ciência de dados. Adoro desbravar insights a partir dos dados e encontrar narrativas que revelam histórias ocultas. Essa abordagem me permite compreender o mundo de uma perspectiva sistêmica, onde cada detalhe conta uma história.
-          </p>
-            <hr>
+            
 
-            <h4>Habilidades Técnicas</h4>
+            <h5>Habilidades Técnicas</h5>
             <div class="skill-container">
                 <div class="card2">
                     <div class="card-body">
@@ -157,7 +157,7 @@
             </div>
             <div>
               <p style="margin-top:2% ;">
-                Sou residente em Engenharia de Software pela UFPE, com MBA em Engenharia de Software pela USP e bacharelado em Engenharia Mecânica pela UFPE. Minha trajetória profissional inclui mais de três anos de experiência em gerenciamento de projetos, durante os quais aprimorei minhas habilidades em desenvolvimento de novos produtos, otimização de processos e liderança de equipes. Atualmente, estou focado em expandir minha expertise em ciência de dados, aproveitando meu conhecimento em Python, SQL e diversas bibliotecas de manipulação de dados e aprendizado de máquina.
+                Sou residente em Engenharia de Software pela UFPE, com MBA em Engenharia de Software pela USP e bacharelado em Engenharia Mecânica pela UFPE. Com mais de três anos de experiência em gerenciamento de projetos, desenvolvi habilidades em desenvolvimento de produtos, otimização de processos e liderança de equipes. Atualmente, estou focado em aprofundar minha expertise em ciência de dados, utilizando Python, SQL e bibliotecas de machine learning.
             </p>
             <hr>
             </div>
@@ -172,6 +172,7 @@
     </div>
 
     <!-- Footer -->
+    
     <div class="footer">
         <p>&copy; 2024 Thaís Nicole. Todos os direitos reservados.</p>
     </div>
@@ -248,6 +249,12 @@
   
       // Inicializa a primeira página
       showPage(currentPage);
+
+
+
+
+
+      
   </script>
   
   
