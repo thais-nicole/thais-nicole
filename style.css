@@ -1,16 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: "Encode Sans", sans-serif;
     background-color: #f8f9fa;
 }
+
 .portfolio-img {
     width: 100%;
-    height: auto;
-    transition: transform 0.3s;
+    position: relative;
+    filter: grayscale(20%);
+
 }
-.portfolio-img:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
-}
+
 .card {
     border: none;
     border-radius: 10px;
@@ -21,15 +22,16 @@ h1, h4 {
 }
 .footer {
     padding: 20px;
+    border-top: 1px,#555;
     text-align: center;
-    background-color: #f1f4f7d3;
+    background-color: #f6fbff14;
     color: rgba(21, 21, 21, 0.708);
     position: relative;
     bottom: 0;
     width: 100%;
 }
 .sidebar {
-    padding: 20px;
+    padding: 10px;
 }
 .sidebar img {
     border-radius: 50%;
@@ -78,14 +80,15 @@ background-color: #218838; /* Cor ao passar o mouse */
 color: rgb(255, 255, 255); /* Cor do texto ao passar o mouse */
 }
 
-.pagination {
-margin: 20px 0; /* Margem para separar a paginação do conteúdo */
+.container {
+    padding-left:  0; 
+    padding-right:  0; 
 }
 
 @media (max-width: 768px) {
     .container {
-        padding-left:  10%; 
-        padding-right:  10%; 
+        padding-left:  5%; 
+        padding-right:  5%; 
     }
     .card2 {
         flex: 1 1 calc(100% - 10px); /* Cartas ocupam toda a largura em telas pequenas */
@@ -94,3 +97,4 @@ margin: 20px 0; /* Margem para separar a paginação do conteúdo */
         display: none;
     }
 }
+
