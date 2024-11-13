@@ -117,6 +117,8 @@ color: rgb(255, 255, 255); /* Cor do texto ao passar o mouse */
 
 @media (max-width: 768px) {
     .container {
+        position: relative;
+        top: -100px;
         padding-left:  5%; 
         padding-right:  5%; 
     }
