@@ -3,6 +3,34 @@
 body {
     font-family: "Encode Sans", sans-serif;
     background-color: #f8f9fa;
+
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os ícones */
+    align-items: center;
+}
+
+.social-icons a {
+    color: #333; /* Cor dos ícones */
+    font-size: 24px; /* Tamanho dos ícones */
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #656565; 
+}
+
+
+.top-gradient {
+    width: 100%;
+    height: 300px; /* Altura do gradiente #b1b0b339 #c9aeff39*/
+    background: linear-gradient(180deg, #d4c0fa39, #ffd1d10f, #ffd1ff00);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Coloca o gradiente atrás do conteúdo */
 }
 
 .portfolio-img {
@@ -82,7 +110,9 @@ color: rgb(255, 255, 255); /* Cor do texto ao passar o mouse */
 
 .container {
     padding-left:  0; 
-    padding-right:  0; 
+    padding-right:  0;
+    transform: scale(0.9);
+    overflow-x: hidden;  
 }
 
 @media (max-width: 768px) {
