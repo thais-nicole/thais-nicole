@@ -12,9 +12,10 @@
 
 </head>
 <body>
-
+    <!-- Div com gradiente no topo -->
+    <div class="top-gradient"></div>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f6fbff43;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f6fbff00;">
         <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,13 +24,12 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">Sobre Mim</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Page Content -->
-    <div class="container my-4">
+    <div class="container my-4 mt-n5">
         <div class="row">
             <!-- Sidebar -->
             <div class="col-md-4">
@@ -40,8 +40,18 @@
                     <h4 style="margin-top: 10%;">Thaís Nicole Rodrigues</h4>
                     <p style="margin-bottom: 0px;">Recife, PE, Brasil</p>
                     <p>Engenheira com experiência em gerenciamento de projetos e gestão de dados.</p>
-                    <p><b>Email:  </b><a href="mailto:rodriguesthaisnicole@gmail.com"> rodriguesthaisnicole@gmail.com</a></p>
-
+                    <div class="social-icons">
+                        <a href="mailto:rodriguesthaisnicole@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/thais-nicole" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/thais-nicole" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    
                 </div>
             </div>
             <div class="col-md-8">
@@ -50,14 +60,14 @@
                     <div class="mt-4 mb-3 filter">
                         <span class="mr-2">Filter:</span>
                         <button class="btn btn-success" onclick="filterItems('all')">Todos</button>
-                        <button class="btn btn-light" onclick="filterItems('db')">DB</button>
-                        <button class="btn btn-light" onclick="filterItems('machine-learning')">Machine Learning</button>
+                        <button class="btn btn-light" onclick="filterItems('SQL')">SQL</button>
+                        <button class="btn btn-light" onclick="filterItems('R')">R</button>
                         <button class="btn btn-light" onclick="filterItems('python')">Python</button>
                     </div>
                 </header>
 
                 <div class="row mb-4" id="item-container">
-                    <div class="col-md-6 mb-4 item machine-learning">
+                    <div class="col-md-6 mb-4 item R>
                         <a href="https://github.com/thais-nicole/" target="_blank" style="text-decoration: none; color: inherit;">
                             <div class="card">
                                 <img src="images/exemplo.png" alt="Descrição da Imagem" class="card-img-top">
@@ -68,7 +78,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-6 mb-4 item machine-learning">
+                    <div class="col-md-6 mb-4 item R">
                         <div class="card">
                             <img src="images/exemplo.png" alt="Descrição da Imagem" class="card-img-top">
                             <div class="card-body">
@@ -77,7 +87,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-4 item machine-learning">
+                    <div class="col-md-6 mb-4 item SQL">
                         <div class="card">
                             <img src="images/exemplo.png" alt="Descrição da Imagem" class="card-img-top">
                             <div class="card-body">
@@ -86,7 +96,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-4 item machine-learning">
+                    <div class="col-md-6 mb-4 item python">
                         <div class="card">
                             <img src="images/exemplo.png" alt="Descrição da Imagem" class="card-img-top">
                             <div class="card-body">
@@ -95,7 +105,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-4 item machine-learning">
+                    <div class="col-md-6 mb-4 item python">
                         <div class="card">
                             <img src="images/exemplo.png" alt="Descrição da Imagem" class="card-img-top">
                             <div class="card-body">
@@ -159,16 +169,12 @@
               <p style="margin-top:2% ;">
                 Sou residente em Engenharia de Software pela UFPE, com MBA em Engenharia de Software pela USP e bacharelado em Engenharia Mecânica pela UFPE. Com mais de três anos de experiência em gerenciamento de projetos, desenvolvi habilidades em desenvolvimento de produtos, otimização de processos e liderança de equipes. Atualmente, estou focado em aprofundar minha expertise em ciência de dados, utilizando Python, SQL e bibliotecas de machine learning.
             </p>
-            <hr>
             </div>
         </div>
 
-        <!-- Contact Section -->
-        <div class="mb-4" id="contact">
-            <h4><b>Contato</b></h4>
-            <p>Se você quiser entrar em contato, sinta-se à vontade para me contatar pelo Linkedin.</p>
-            <p><strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/thais-nicole/">thais-nicole</a></p>
-        </div>
+
+        
+        
     </div>
 
     <!-- Footer -->
