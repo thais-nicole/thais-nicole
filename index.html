@@ -24,6 +24,8 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">Sobre Mim</a></li>
+                <li class="nav-item"><a class="nav-link" href="#posts">Postagens</a></li>
+
             </ul>
         </div>
     </nav>
@@ -32,7 +34,7 @@
     <div class="container my-4 mt-n5">
         <div class="row">
             <!-- Sidebar -->
-            <div class="col-md-4">
+            <div class="col-md-3 mt-n1">
                 <div class="sidebar">
                     
                     <img src="images/Thais.jpg" alt="My Avatar" class="portfolio-img">
@@ -54,20 +56,35 @@
                     
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-9 mt-n2">
                 <header id="portfolio">
                     <h1 class="my-4"><b>Portfólio</b></h1>
                     <div class="mt-4 mb-3 filter">
                         <span class="mr-2">Filter:</span>
                         <button class="btn btn-success" onclick="filterItems('all')">Todos</button>
-                        <button class="btn btn-light" onclick="filterItems('SQL')">SQL</button>
                         <button class="btn btn-light" onclick="filterItems('R')">R</button>
+                        <button class="btn btn-light" onclick="filterItems('CS')">C#</button>
                         <button class="btn btn-light" onclick="filterItems('python')">Python</button>
                     </div>
                 </header>
 
                 <div class="row mb-4" id="item-container">
-                    <div class="col-md-6 mb-4 item R">
+                    <div class="col-md-6 mb-4 item python">
+                        <a href="https://github.com/thais-nicole/" target="_blank" style="text-decoration: none; color: inherit;">
+                            <div class="card position-relative">
+                                <!-- Botão de expandir -->
+                                <button class="btn btn-transparent position-absolute" style="top: 10px; right: 10px; z-index: 10; background-color: #ffffff00; border: none; border-radius: 0%; padding: 10px;">
+                                    <i class="fas fa-external-link-alt"></i> <!-- Ícone de expandir -->
+                                </button>
+                                <img src="images/proj0.png" alt="Bibliotecas" class="card-img-top">
+                                <div class="card-body">
+                                    <p><b>Análise de Risco em Ciclovias</b></p>
+                                    <p style="margin-top: -10px; margin-bottom: -2px;">O projeto visa modelar e prever situações de risco, como acidentes e condições de tráfego, para identificar pontos críticos nas ciclovias e melhorar a segurança dos ciclistas. </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 mb-4 item python">
                         <a href="https://github.com/thais-nicole/" target="_blank" style="text-decoration: none; color: inherit;">
                             <div class="card position-relative">
                                 <!-- Botão de expandir -->
@@ -76,47 +93,71 @@
                                 </button>
                                 <img src="images/proj1.png" alt="Bibliotecas" class="card-img-top">
                                 <div class="card-body">
-                                    <p><b>Mineração de dados WhatsApp</b></p>
-                                    <p style="margin-top: -10px; margin-bottom: -2px;">Coleta e analise de comentários do WhatsApp na Google Play Store para identificar tendências e insights sobre a experiência dos usuários.</p>
+                                    <p><b>Análise de Sentimentos da Experiência do Usuário</b></p>
+                                    <p style="margin-top: -10px; margin-bottom: -2px;">Coleta e análise de comentários do WhatsApp na Google Play Store para identificar emoções predominantes, tendências e insights visando melhorar a experiência dos usuários.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 mb-4 item python">
+                        <a href="https://github.com/thais-nicole/" target="_blank" style="text-decoration: none; color: inherit;">
+                            <div class="card position-relative">
+                                <!-- Botão de expandir -->
+                                <button class="btn btn-transparent position-absolute" style="top: 10px; right: 10px; z-index: 10; background-color: #ffffff00; border: none; border-radius: 0%; padding: 10px;">
+                                    <i class="fas fa-external-link-alt"></i> <!-- Ícone de expandir -->
+                                </button>
+                                <img src="images/proj2.png" alt="Bibliotecas" class="card-img-top">
+                                <div class="card-body">
+                                    <p><b>Dashboard de Gestão Financeira</b></p>
+                                    <p style="margin-top: -10px; margin-bottom: -2px;">Fornece uma visualização interativa das finanças, permitindo o monitoramento de fluxo de caixa, análise de lucros e perdas, e gestão de orçamentos para um planejamento eficiente.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 mb-4 item python">
+                        <a href="https://github.com/thais-nicole/" target="_blank" style="text-decoration: none; color: inherit;">
+                            <div class="card position-relative">
+                                <!-- Botão de expandir -->
+                                <button class="btn btn-transparent position-absolute" style="top: 10px; right: 10px; z-index: 10; background-color: #ffffff00; border: none; border-radius: 0%; padding: 10px;">
+                                    <i class="fas fa-external-link-alt"></i> <!-- Ícone de expandir -->
+                                </button>
+                                <img src="images/proj3.png" alt="Bibliotecas" class="card-img-top">
+                                <div class="card-body">
+                                    <p><b>API de Supermercado para Controle de Estoque</b></p>
+                                    <p style="margin-top: -10px; margin-bottom: -2px;">Tem como objetivo permitir uma gestão eficiente de produtos em estoque, monitorando as quantidades disponíveis, realizando atualizações de entradas e saídas. </p>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col-md-6 mb-4 item R">
-                        <div class="card">
-                            <img src="images/exemplo.png" alt="Descrição da Imagem" class="card-img-top">
-                            <div class="card-body">
-                                <p><b>Em construção</b></p>
-                                <p style="margin-top: -10px; margin-bottom: -2px;">Em construção Em construção Em construção Em construção Em construção Em construção</p>
+                        <a href="https://github.com/thais-nicole/" target="_blank" style="text-decoration: none; color: inherit;">
+                            <div class="card position-relative">
+                                <!-- Botão de expandir -->
+                                <button class="btn btn-transparent position-absolute" style="top: 10px; right: 10px; z-index: 10; background-color: #ffffff00; border: none; border-radius: 0%; padding: 10px;">
+                                    <i class="fas fa-external-link-alt"></i> <!-- Ícone de expandir -->
+                                </button>
+                                <img src="images/exemplo.png" alt="Bibliotecas" class="card-img-top">
+                                <div class="card-body">
+                                    <p><b>Em construção</b></p>
+                                    <p style="margin-top: -10px; margin-bottom: -2px;">Em construção. </p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <div class="col-md-6 mb-4 item SQL">
-                        <div class="card">
-                            <img src="images/exemplo.png" alt="Descrição da Imagem" class="card-img-top">
-                            <div class="card-body">
-                                <p><b>Em construção</b></p>
-                                <p style="margin-top: -10px; margin-bottom: -2px;">Em construção Em construção Em construção Em construção Em construção Em construção</p>
+                    <div class="col-md-6 mb-4 item CS">
+                        <a href="https://github.com/thais-nicole/" target="_blank" style="text-decoration: none; color: inherit;">
+                            <div class="card position-relative">
+                                <!-- Botão de expandir -->
+                                <button class="btn btn-transparent position-absolute" style="top: 10px; right: 10px; z-index: 10; background-color: #ffffff00; border: none; border-radius: 0%; padding: 10px;">
+                                    <i class="fas fa-external-link-alt"></i> <!-- Ícone de expandir -->
+                                </button>
+                                <img src="images/exemplo.png" alt="Bibliotecas" class="card-img-top">
+                                <div class="card-body">
+                                    <p><b>Em construção</b></p>
+                                    <p style="margin-top: -10px; margin-bottom: -2px;">Em construção. </p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4 item python">
-                        <div class="card">
-                            <img src="images/exemplo.png" alt="Descrição da Imagem" class="card-img-top">
-                            <div class="card-body">
-                                <p><b>Em construção</b></p>
-                                <p style="margin-top: -10px; margin-bottom: -2px;">Em construção Em construção Em construção Em construção Em construção Em construção</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4 item python">
-                        <div class="card">
-                            <img src="images/exemplo.png" alt="Descrição da Imagem" class="card-img-top">
-                            <div class="card-body">
-                                <p><b>Em construção</b></p>
-                                <p style="margin-top: -10px; margin-bottom: -2px;">Em construção Em construção Em construção Em construção Em construção Em construção</p>
-                            </div>
-                        </div>
+                        </a>
                     </div>
           </div>
       
@@ -134,7 +175,9 @@
         <div class="mb-4" id="about">
             <h4><b>Sobre Mim</b></h4>
             <p>
-                Olá! Sou Thaís Nicole, engenheira e apaixonada por ciência de dados. Adoro explorar insights e revelar histórias ocultas nos dados, enxergando o mundo de forma sistêmica, onde cada detalhe importa.  
+                Olá! Sou Thaís Nicole, engenheira e apaixonada por ciência de dados. Tenho um olhar analítico para explorar insights e contar histórias a partir dos dados, enxergando o mundo de maneira sistêmica, onde cada detalhe faz diferença.
+              Minha paixão é resolver problemas complexos de forma criativa e estratégica.
+
             </p>
             
 
@@ -171,16 +214,110 @@
             </div>
             <div>
               <p style="margin-top:2% ;">
-                Sou residente em Engenharia de Software pela UFPE, com MBA em Engenharia de Software pela USP e bacharelado em Engenharia Mecânica pela UFPE. Com mais de três anos de experiência em gerenciamento de projetos, desenvolvi habilidades em desenvolvimento de produtos, otimização de processos e liderança de equipes. Atualmente, estou focado em aprofundar minha expertise em ciência de dados, utilizando Python, SQL e bibliotecas de machine learning.
-            </p>
+                Atualmente, estou me especializando em técnicas avançadas de ciência de dados e suas aplicações práticas no ambiente empresarial. Estou entusiasmada em colaborar em projetos que exigem análise estratégica de dados e otimização de processos. 
+                Sou residente em Engenharia de Software pela UFPE, com MBA em Engenharia de Software pela USP e bacharelado em Engenharia Mecânica pela UFPE. Com mais de dois anos de experiência em gerenciamento de projetos, desenvolvi habilidades em desenvolvimento de produtos, otimização de processos e liderança de equipes. Atualmente, estou focado em aprofundar minha expertise em ciência de dados, utilizando Python, SQL e bibliotecas de machine learning.              </p>
             </div>
         </div>
 
 
+        <div class="mb-4" id="posts">
+            <h4><b>Postagens</b></h4>
         
+            <!-- Carrossel de posts -->
+            <div id="postsCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Card 1 -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-12 mb-4 post-card">
+                                <a href="https://www.exemplo.com" target="_blank" style="text-decoration: none;">
+                                    <div class="card" style="width: 100%; background-color: #F2F5F7; color: black;">
+                                        <div class="row no-gutters">
+                                            <!-- Imagem Lateral -->
+                                            <div class="col-md-4">
+                                                <img src="images/exemplo2.png" class="card-img" alt="Imagem da publicação">
+                                            </div>
+                                            <!-- Texto do Card -->
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Título da Publicação 1</h5>
+                                                    <p class="card-text">Descrição curta ou resumo da publicação 1.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
         
-    </div>
-
+                    <!-- Card 2 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-12 mb-4 post-card">
+                                <a href="https://www.exemplo.com" target="_blank" style="text-decoration: none; color: black;">
+                                    <div class="card" style="width: 100%; background-color: #F2F5F7;">
+                                        <div class="row no-gutters">
+                                            <!-- Imagem Lateral -->
+                                            <div class="col-md-4">
+                                                <img src="images/exemplo2.png" class="card-img" alt="Imagem da publicação">
+                                            </div>
+                                            <!-- Texto do Card -->
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Título da Publicação 2</h5>
+                                                    <p class="card-text">Descrição curta ou resumo da publicação 2.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Card 3 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-12 mb-4 post-card">
+                                <a href="https://www.exemplo.com" target="_blank" style="text-decoration: none; color: black;">
+                                    <div class="card" style="width: 100%; background-color: #F2F5F7;">
+                                        <div class="row no-gutters">
+                                            <!-- Imagem Lateral -->
+                                            <div class="col-md-4">
+                                                <img src="images/exemplo2.png" class="card-img" alt="Imagem da publicação">
+                                            </div>
+                                            <!-- Texto do Card -->
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Título da Publicação 3</h5>
+                                                    <p class="card-text">Descrição curta ou resumo da publicação 3.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Outros itens de carrossel (cards 4, 5, 6, etc.) -->
+                </div>
+        
+                <!-- Controles do carrossel -->
+                <a class="carousel-control-prev" href="#postsCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#postsCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+       
+        </div>
+        
     <!-- Footer -->
     
     <div class="footer">
@@ -259,6 +396,7 @@
   
       // Inicializa a primeira página
       showPage(currentPage);
+
 
 
 

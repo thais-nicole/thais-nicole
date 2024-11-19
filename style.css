@@ -113,6 +113,7 @@ color: rgb(255, 255, 255); /* Cor do texto ao passar o mouse */
     padding-right:  0;
     transform: scale(0.9);
     overflow-x: hidden;  
+    max-width: 90%;
 }
 
 @media (max-width: 768px) {
