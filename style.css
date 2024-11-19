@@ -120,8 +120,7 @@ color: rgb(255, 255, 255); /* Cor do texto ao passar o mouse */
     .container {
         position: relative;
         top: -100px;
-        padding-left:  5%; 
-        padding-right:  5%; 
+
     }
     .card2 {
         flex: 1 1 calc(100% - 10px); /* Cartas ocupam toda a largura em telas pequenas */
