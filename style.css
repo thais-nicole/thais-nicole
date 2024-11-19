@@ -8,13 +8,13 @@ body {
 
 .social-icons {
     display: flex;
-    gap: 10px; /* Espaçamento entre os ícones */
+    gap: 10px; 
     align-items: center;
 }
 
 .social-icons a {
-    color: #333; /* Cor dos ícones */
-    font-size: 24px; /* Tamanho dos ícones */
+    color: #333; 
+    font-size: 24px; 
     text-decoration: none;
 }
 
@@ -25,18 +25,18 @@ body {
 
 .top-gradient {
     width: 100%;
-    height: 300px; /* Altura do gradiente #b1b0b339 #c9aeff39*/
+    height: 300px; 
     background: linear-gradient(180deg, #d4c0fa39, #ffd1d10f, #ffd1ff00);
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1; /* Coloca o gradiente atrás do conteúdo */
+    z-index: -1; 
 }
 
 .portfolio-img {
     width: 100%;
     position: relative;
-    filter: grayscale(20%);
+    filter: grayscale(5%);
 
 }
 
@@ -49,7 +49,6 @@ h1, h4 {
     color: #343a40;
 }
 .footer {
-    padding: 20px;
     border-top: 1px,#555;
     text-align: center;
     background-color: #f6fbff14;
@@ -79,33 +78,33 @@ h1, h4 {
     border-radius: 10px;
     text-align: center;
     margin: 15px 5px;
-    flex: 1 1 calc(25% - 10px); /* Ajusta o tamanho das cartas em telas pequenas */
+    flex: 1 1 calc(25% - 10px); 
 }
 .card-icon {
     font-size: 40px;
-    color: #28a745; /* Cor do ícone */
+    color: #28a745; 
 }
 .skill-container {
     display: flex;
-    flex-wrap: wrap; /* Permite que as cartas quebrem para a próxima linha em telas pequenas */
+    flex-wrap: wrap; 
     justify-content: center;
 }
 .item {
-    display: none; /* Oculta todos os itens inicialmente */
+    display: none; 
 }
 
 .page-item.active .page-link {
-background-color: #28a745; /* Cor de fundo para a página ativa */
-border-color: #28a745; /* Cor da borda para a página ativa */
+background-color: #28a745; 
+border-color: #28a745; 
 }
 
 .page-link {
-color: rgb(0, 0, 0); /* Cor do texto dos links */
+color: rgb(0, 0, 0); 
 }
 
 .page-link:hover {
-background-color: #218838; /* Cor ao passar o mouse */
-color: rgb(255, 255, 255); /* Cor do texto ao passar o mouse */
+background-color: #218838; 
+color: rgb(255, 255, 255);
 }
 
 .container {
@@ -114,6 +113,7 @@ color: rgb(255, 255, 255); /* Cor do texto ao passar o mouse */
     transform: scale(0.9);
     overflow-x: hidden;  
     max-width: 90%;
+
 }
 
 @media (max-width: 768px) {
@@ -123,10 +123,85 @@ color: rgb(255, 255, 255); /* Cor do texto ao passar o mouse */
 
     }
     .card2 {
-        flex: 1 1 calc(100% - 10px); /* Cartas ocupam toda a largura em telas pequenas */
+        flex: 1 1 calc(100% - 10px); 
     }
     .filter{
         display: none;
     }
 }
 
+.menu {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  .sidebar1 {
+    width: 25%;
+  }
+  .sidebar1 ul {
+    list-style: none;
+    padding: 0;
+    border-left: 2px solid #ccc;
+  }
+  .sidebar1 li {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .sidebar1 li.active {
+    background-color: #d9ead3;
+    color: #218838;
+    border-left: 4px solid #218838;
+    font-weight: bold;
+  }
+  .sidebar1 li:hover {
+    background-color: #f9f9f9;
+  }
+  .content {
+    flex: 1;
+  }
+  .job-title {
+    font-size: 1.2em;
+    color: #218838;
+  }
+  .job-date {
+    font-size: 0.9em;
+    color: #666;
+  }
+  .job-description {
+    margin-top: 10px;
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  .content-item {
+    display: none;
+  }
+  .content-item.active {
+    display: block;
+  }
+
+
+  @media (max-width: 768px) {
+    .menu {
+      flex-direction: column;
+    }
+    .sidebar1 {
+      width: 100%;
+      border-left: none;
+      border-bottom: 2px solid #ccc;
+    }
+    .sidebar1 ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      border-left: none;
+    }
+    .sidebar1 li {
+      padding: 10px;
+      border-left: none;
+    }
+    .sidebar1 li.active {
+      border-left: none;
+      border-bottom: 4px solid #218838;
+    }
+  }
