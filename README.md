@@ -22,7 +22,7 @@ eficiência operacional por meio da análise de dados.
   <a href="https://www.linkedin.com/in/thais-nicole" target="_blank">
     <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
   </a> 
-  <a href="" target="_blank">
-    <img src="https://img.shields.io/badge/linktree-39E09B?style=for-the-badge&logo=linktree&logoColor=white">
-  </a> 
+  <a href = "mailto:contatothaisnicole@gmail.com">
+    <img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank">
+  </a>
 </div>
