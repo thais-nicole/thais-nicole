@@ -1,0 +1,150 @@
+        header {
+            width: 100%;
+            height: 150px; 
+            overflow: hidden;
+            bottom: 0; 
+        }
+        header img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+        body { 
+            font-family: "Raleway", sans-serif;
+            margin: 0; 
+            padding: 0; 
+            background-color: #ffffff; 
+        }
+        h1 {
+            font-size: 2rem; 
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+        h2 {
+            font-size: 1.2rem; 
+            margin-top: 4%;
+        }
+        h3 {
+            font-size: 1rem; 
+        }
+        p, li {
+            font-size: 0.95rem;
+            margin-bottom: 1%;
+        }
+        .container { width: 50%; margin: -50px auto;}
+        .filtros { margin-top:10px; margin-bottom: 20px; display: flex; gap: 10px; }
+        .filtros button {
+            padding: 5px 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            font-size: 0.875rem; /* Tamanho do texto reduzido */
+        }
+        .filtros button#todos {
+            background-color: black;
+            color: white;
+        }
+        .filtros button:not(#todos) {
+            background-color: white;
+            color: black;
+            border: 1px solid #ccc;
+        }
+        .filtros button:hover {
+            background-color: #f0f0f0;
+        }
+        .cards { display: flex; flex-wrap: wrap; gap: 15px;}
+        .card { 
+            border: 1px solid #ddd; 
+            padding: 10px; 
+            width: 230px; 
+            border-radius: 5px; 
+            background-color: white;
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between; 
+            height: 400px; 
+        }
+        .card img { 
+            width: 100%; 
+            margin-bottom: 20%;
+            height: 150px; 
+            object-fit: cover; 
+            border-radius: 5px; 
+        }
+        .tech-container {
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 5px; 
+            margin-top: 10px;
+        }
+        .tech {
+            padding: 2px 8px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: small;
+            color: #333;
+        }
+        .paginacao { margin-top: 10px; display: flex; justify-content: center; gap: 5px; }
+        .paginacao button { 
+            padding: 5px 10px; 
+            cursor: pointer; 
+            border: 1px solid #ddd; 
+            border-radius: 5px; 
+            background-color: #f8f9fa; 
+            transition: 0.3s; 
+            font-size: 0.875rem;
+        }
+        .paginacao button:hover { 
+            background-color: #e2e6ea; 
+        }
+        .paginacao button.ativo { 
+            background-color: #6c757d; 
+            color: white; 
+            font-weight: bold; 
+        }
+        a {
+            text-decoration: none; 
+            color: black; 
+        }
+        a:hover {
+            text-decoration: none; 
+            color: black;
+        }
+        .titulo-com-foto {
+            display: flex;
+            flex-direction: column; 
+            margin-bottom: 20px;
+        }
+        .titulo-com-foto img {
+            width: 100px; 
+            height: 100px;
+            border-radius: 50%; 
+            margin-bottom: 15px; 
+        }
+        .footer {
+            bottom: 0;
+            width: 100%;
+            background-color: #6c757d71;
+            color: rgb(5, 5, 5);
+            text-align: center;
+            margin-top: 10%;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+        @media (max-width: 1000px) {
+            .container {
+                width: 95%;
+            }
+             .card{
+                width: 100%;
+                height: 60%;
+            }
+             .card img { 
+                width: 100%; 
+                margin-bottom: 10%;
+            }
+            .footer {
+                margin-top: 20%;
+            }
+        }

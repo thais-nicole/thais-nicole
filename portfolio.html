@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Projetos</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <img src="images/banner.png" alt="Banner com Foto">
+    </header>
+
+    <div class="container">
+        <div class="titulo-com-foto">
+            <img src="images/foto.jpeg" alt="Foto de Thaís Rodrigues">
+            <h1>Thais Rodrigues</h1>
+        </div>
+
+        <h2>Sobre mim</h2>
+        <p>
+            Sou Thaís Rodrigues, engenheira mecânica com MBA e Residência em Engenharia de Software, apaixonada por dados, inovação e tecnologia. Tenho experiência em engenharia de dados, análise de dados e visualização de dados, utilizando ferramentas como Python e ferramentas BI.
+        </p>
+        <h2>Habilidades e interesses</h2>
+        <ul>
+            <li>
+                <strong>Engenharia e Manipulação de Dados:</strong> Expertise em Python, SQL, Banco de dados (PostgreSQL) e ETL, com foco em limpeza, modelagem e mineração.
+            </li>
+            <li>
+                <strong>Análise e Visualização de Dados:</strong> EDA (Análise exploratória de dados) com Notebooks, Power BI, Tableau, storytelling, KPIs e Excel/Google Sheets.
+            </li>
+            <li>
+               <strong>Automação e Estratégia de Negócios: </strong> Implementação de soluções automatizadas para otimizar processos e fluxos de trabalho para apoiar decisões estratégicas.
+            </li>
+        </ul>
+
+        <h2>Meus Projetos</h2>
+        <div class="filtros">
+            <button id="todos" onclick="filtrarProjetos('todos', true)">Todos</button>
+            <button onclick="filtrarProjetos('Python', true)">Python</button>
+            <button onclick="filtrarProjetos('BI', true)">BI</button>
+            <button onclick="filtrarProjetos('SQL', true)">SQL</button>
+        </div>
+        <div class="cards" id="listaProjetos"></div>
+        <div class="paginacao" id="paginacao"></div>
+
+        <h2>Formação acadêmica</h2>
+        <ul>
+            <li>
+                MBA em Engenharia de Software, Nov. 2023 - Dez. 2025 na USP (Universidade de São Paulo Estruturado) com foco em Dados e Negócios, Desenvolvimento e Gestão e Cloud. 
+            </li>
+            <li>
+                Pós Graduação (Residência) em Engenharia de Software focado em testes, Abr. 2024 - Mar. 2025 no Centro de Informática UFPE. 
+            </li>
+            <li>
+                Graduação em Engenharia Mecânica, Abr. 2016 - Dez. 2022 na Universidade Federal de Pernambuco. 
+            </li>
+        </ul>
+
+        <h2>Contato</h2>
+        <p>Entre em contato! Estou disponível para novas oportunidades e projetos.</p>
+        <ul>
+            <li>
+                <strong>GitHub: </strong><a href="https://github.com/thais-nicole" target="_blank">https://github.com/thais-nicole</a>
+            </li>
+            <li>
+                <strong>LinkedIn: </strong><a href="https://www.linkedin.com/in/thais-nicole/" target="_blank">https://www.linkedin.com/in/thais-nicole/</a>        
+            </li>
+        </ul>        
+    </div>
+    <footer class="footer">
+    </footer>
+    <script>
+        const projetos = [
+            { titulo: "Estratégias para impulsionar as vendas de viagens ao longo do ano", linguagem: "Python, Pandas, Tableau", descricao: "Limpeza e visualização de dados.", imagem:"images/projeto1.png", link: "https://github.com/thais-nicole/TravelTripAnalysis" },
+            { titulo: "Análise das ocorrências de trote para o SAMU Pernambuco", linguagem: "Tableau", descricao: "Análise de dados públicos.", imagem: "images/projeto2.png", link: "https://github.com/thais-nicole/TrotesSAMU" }
+        ];
+        
+        let paginaAtual = 1;
+        const itensPorPagina = 3;
+        let projetosFiltrados = [...projetos];
+
+        function renderizarProjetos() {
+            const container = document.getElementById("listaProjetos");
+            container.innerHTML = "";
+            
+            const inicio = (paginaAtual - 1) * itensPorPagina;
+            const fim = inicio + itensPorPagina;
+            const projetosPaginados = projetosFiltrados.slice(inicio, fim);
+            
+            projetosPaginados.forEach(projeto => {
+                const card = document.createElement("div");
+                card.classList.add("card");
+                
+                const linguagens = projeto.linguagem.split(',').map(l => l.trim());
+                
+                const techLabels = linguagens.map(l => {
+                    return `<div class="tech">${l}</div>`;
+                }).join(''); 
+                
+                card.innerHTML = ` 
+                    <a href="${projeto.link}">
+                        <img src="${projeto.imagem}" alt="Imagem do projeto" />
+                        <h3>${projeto.titulo}</h3>
+                        <p>${projeto.descricao}</p>
+                        <div class="tech-container">${techLabels}</div>
+                    </a>
+                `;
+                container.appendChild(card);
+            });
+            renderizarPaginacao();
+        }
+
+        function renderizarPaginacao() {
+            const totalPaginas = Math.ceil(projetosFiltrados.length / itensPorPagina);
+            const paginacaoContainer = document.getElementById("paginacao");
+            paginacaoContainer.innerHTML = "";
+            
+            for (let i = 1; i <= totalPaginas; i++) {
+                const botao = document.createElement("button");
+                botao.textContent = i;
+                botao.onclick = () => { paginaAtual = i; renderizarProjetos(); };
+                if (i === paginaAtual) botao.classList.add("ativo");
+                paginacaoContainer.appendChild(botao);
+            }
+        }
+
+        function filtrarProjetos(filtro = 'todos', resetarPagina = false) {
+            projetosFiltrados = filtro === "todos" ? [...projetos] : projetos.filter(p => p.linguagem.includes(filtro));
+            if (resetarPagina) paginaAtual = 1;
+            renderizarProjetos();
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            filtrarProjetos();
+        });
+    </script>
+</body>
+</html>
