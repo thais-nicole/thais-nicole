@@ -96,10 +96,10 @@
             font-size: 0.875rem;
         }
         .paginacao button:hover { 
-            background-color: #e2e6ea; 
+            background-color: #ddd; 
         }
         .paginacao button.ativo { 
-            background-color: #e0e0e0; 
+            background-color: #ddd; 
             color: #333; 
             font-weight: bold; 
         }
@@ -125,7 +125,7 @@
         .footer {
             bottom: 0;
             width: 100%;
-            background-color: #6c757d24;
+            background-color: #ddd;
             color: rgb(5, 5, 5);
             text-align: center;
             margin-top: 10%;
