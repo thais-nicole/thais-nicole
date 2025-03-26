@@ -85,9 +85,9 @@
             font-size: small;
             color: #333;
         }
-        .paginacao { margin-top: 10px; display: flex; justify-content: center; gap: 5px; }
+        .paginacao { margin-top: 10px; margin-bottom: 20px;display: flex; justify-content: center; gap: 5px; }
         .paginacao button { 
-            padding: 5px 10px; 
+            padding: 5px 8px; 
             cursor: pointer; 
             border: 1px solid #ddd; 
             border-radius: 5px; 
@@ -99,8 +99,8 @@
             background-color: #e2e6ea; 
         }
         .paginacao button.ativo { 
-            background-color: #6c757d; 
-            color: white; 
+            background-color: #e0e0e0; 
+            color: #333; 
             font-weight: bold; 
         }
         a {
@@ -125,7 +125,7 @@
         .footer {
             bottom: 0;
             width: 100%;
-            background-color: #6c757d71;
+            background-color: #6c757d24;
             color: rgb(5, 5, 5);
             text-align: center;
             margin-top: 10%;
