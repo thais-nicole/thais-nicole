@@ -1,10 +1,7 @@
 ## Thaís Rodrigues
 ### Business Intelligence | Analista de Negócios | Data Analytics
 
-Engenheira com 2 anos de experiência em análise de dados, criação de dashboards e modelagem de dados. Fluente em SQL e
-familiarizada com ferramentas como Datavys. Capacidade analítica para investigar e resolver problemas complexos, com
-experiência em gestão de indicadores de negócios. Proativa e com mentalidade analítica, já entregou soluções para aumentar a
-eficiência operacional por meio da análise de dados.
+Engenheira com 2 anos de experiência em planejamento estratégico, acompanhamento de projetos e análise de dados, com expertise em gestão de indicadores e otimização de processos. Proficiente em SQL, Python, Excel e visualização de dados, além de familiaridade com metodologias ágeis. Tenho um perfil proativo e analítico, que busca apoiar a tomada de decisões com insights.
 
 <div style="display: inline_block"><br>
   <img align="center" alt="Python" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
