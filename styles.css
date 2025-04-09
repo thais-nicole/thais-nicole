@@ -23,9 +23,13 @@
             color: #383838
 
         }
+
+        .content{
+            margin-top: 3%;
+        }
+
         h2 {
             font-size: 1.2rem; 
-            margin-top: 2%;
             font-weight: 500;
             color: #3d3d3d;
 
@@ -175,6 +179,9 @@
             .role{
                 margin-top: 1%;
                 font-size: 1.08rem;
+            }
+            .content{
+                margin-top: 6%;
             }
 
         }
