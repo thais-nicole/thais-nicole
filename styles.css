@@ -80,16 +80,6 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
-h2::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 60px;
-    height: 0.5px;
-    background: #8C0057;
-}
-
 h3 {
     font-size: 1rem;
 }
